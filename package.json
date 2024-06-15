@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "youtube-transcript-summarizer",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Get a summary of a YouTube video's transcript using OpenAI's GPT model.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -20,5 +20,12 @@
 		"obsidian": "latest",
 		"tslib": "2.4.0",
 		"typescript": "4.7.4"
+	},
+	"dependencies": {
+		"@langchain/community": "^0.2.5",
+		"langchain": "^0.2.4",
+		"openai": "^4.47.3",
+		"youtube-transcript": "^1.2.1",
+		"youtubei.js": "^9.4.0"
 	}
 }
